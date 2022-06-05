@@ -7,7 +7,7 @@ function Error() {
   return (
     <Wrapper>
       <div className="error-image-container">
-        <img src={errorImg} alt="404" />
+        <img className="error-img" src={errorImg} alt="404" />
       </div>
       <div className="error-text-content">
         <h1 className="error-title">OOPS PAGE NOT FOUND!</h1>

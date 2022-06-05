@@ -310,5 +310,8 @@ const Wrapper = styled.div`
     .profile-form {
       padding-left: 1rem;
     }
+    .abstract-1 {
+      display: none;
+    }
   }
 `;

@@ -29,6 +29,14 @@ const Wrapper = styled.div`
   .back-home-btn:hover {
     background-color: #1b1b1e;
   }
+  @media (max-width: 646px) {
+    .error-img {
+      width: 60%;
+    }
+    .error-title {
+      font-size: 2.4rem;
+    }
+  }
 `;
 
 export default Wrapper;
