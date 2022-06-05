@@ -8,6 +8,12 @@ const Wrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   margin: 2rem 0;
+  .demo-btn {
+    margin-top: 1rem;
+    background: none !important;
+    border: 2px solid #1b1b1e !important;
+    color: #1b1b1e !important;
+  }
   .left-container {
     background-color: #87d0e2;
     width: 100%;

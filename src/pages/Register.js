@@ -141,7 +141,16 @@ function Register() {
                   Sign up
                 </button>
               )}
-
+              <button
+                disabled={isLoading}
+                type="button"
+                className="login-btn demo-btn"
+                onClick={() => {
+                  dispatch(loginUser({ username: "test", password: "test123" }));
+                }}
+              >
+                Demo
+              </button>
               {values.isMember ? (
                 <p className="register-user">
                   Don't have an account? Signup
