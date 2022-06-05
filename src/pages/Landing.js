@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/images/logo.svg";
 import heroImg from "../assets/images/hero.svg";
 import Wrapper from "../assets/wrappers/LandingPage";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiFillCloseSquare } from "react-icons/ai";
+
 function Landing() {
+  const [isOpen, setisOpen] = useState(false);
+
   return (
     <Wrapper>
-      <nav>
+      <nav className={isOpen ? "nav open" : "nav"}>
         <img className="logo" src={logo} alt="logo" />
         <ul className="nav-links">
           <li className="nav-link-item">
@@ -30,7 +34,17 @@ function Landing() {
           </Link>
         </ul>
         <button className="toggle-btn">
-          <GiHamburgerMenu className="toggle-icon"></GiHamburgerMenu>
+          {isOpen ? (
+            <AiFillCloseSquare
+              className="toggle-icon"
+              onClick={() => setisOpen(false)}
+            ></AiFillCloseSquare>
+          ) : (
+            <GiHamburgerMenu
+              className="toggle-icon"
+              onClick={() => setisOpen(true)}
+            ></GiHamburgerMenu>
+          )}
         </button>
       </nav>
       <div className="container landing-page">
