@@ -102,6 +102,20 @@ const Wrapper = styled.div`
       transform: translate(0, -10%);
     }
   }
+  @media (max-width: 800px) {
+    width: 100%;
+    background-color: #1b1b1e;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+    margin: 0;
+    .right-container {
+      display: none;
+    }
+    .left-container {
+      height: 100vh;
+    }
+  }
 `;
 
 export default Wrapper;
