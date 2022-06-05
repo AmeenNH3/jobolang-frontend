@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.svg";
 import heroImg from "../assets/images/hero.svg";
 import Wrapper from "../assets/wrappers/LandingPage";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 function Landing() {
   return (
     <Wrapper>
@@ -28,6 +29,9 @@ function Landing() {
             Login/Register
           </Link>
         </ul>
+        <button className="toggle-btn">
+          <GiHamburgerMenu className="toggle-icon"></GiHamburgerMenu>
+        </button>
       </nav>
       <div className="container landing-page">
         <div className="hero-container">
