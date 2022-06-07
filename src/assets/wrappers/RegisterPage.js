@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     color: #1b1b1e !important;
   }
   .left-container {
-    background-color: #87d0e2;
+    background-color: #69a2b0;
     width: 100%;
     display: flex;
     flex-direction: column;
