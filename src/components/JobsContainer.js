@@ -41,6 +41,7 @@ function JobsContainer() {
 }
 
 const Wrapper = styled.div`
+  padding-top: 2rem;
   padding-left: 2rem;
   /* display: flex;
   flex-direction: column;
