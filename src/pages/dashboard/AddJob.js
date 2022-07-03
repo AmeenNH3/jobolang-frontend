@@ -7,7 +7,6 @@ import { toast } from "react-toastify";
 
 function AddJob() {
   const {
-    isLoading,
     position,
     company,
     jobLocation,

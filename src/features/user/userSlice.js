@@ -5,7 +5,6 @@ import { toast } from "react-toastify";
 import { addUserToLocalStorage, removeUserFromLocalStorage } from "../../utils/localStorage";
 
 import { userInitialState } from "../initialStates";
-import { Navigate } from "react-router-dom";
 
 export const registerUser = createAsyncThunk("user/registerUser", registerUserThunk);
 export const loginUser = createAsyncThunk("user/loginUser", loginUserThunk);

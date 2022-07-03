@@ -1,4 +1,4 @@
-import { Landing, Register, Error, Dashboard } from "./pages";
+import { Landing, Register, Error } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Profile, AddJob, AllJobs, Analytics, SharedLayout } from "./pages/dashboard";
 import { ToastContainer } from "react-toastify";

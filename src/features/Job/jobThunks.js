@@ -1,7 +1,6 @@
 import { checkForUnauthorizedResponse } from "../../utils/axios";
 import customFetch from "../../utils/axios";
 import { clearValues } from "./JobSlice";
-import { toast } from "react-toastify";
 export const createJobThunk = async (job, thunkAPI) => {
   try {
     console.log(thunkAPI.getState().user.user.token);

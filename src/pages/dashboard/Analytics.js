@@ -16,7 +16,7 @@ function Analytics() {
 
   return (
     <Wrapper>
-      <h2 className="stats-title">Welcome {username == "test" ? "" : username}</h2>
+      <h2 className="stats-title">Welcome {username === "test" ? "" : username}</h2>
       <StatsContainer></StatsContainer>
       <div className="chart-overview-container">
         <div className="overview-container">

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import styled from "styled-components";
 
 function StatsContainer() {
-  const { stats, monthlyApplications } = useSelector((state) => state.allJobs);
+  const { stats } = useSelector((state) => state.allJobs);
   return (
     <Wrapper>
       <div className="stats-container">

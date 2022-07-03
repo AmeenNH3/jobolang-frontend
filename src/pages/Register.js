@@ -20,7 +20,7 @@ function Register() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleKeyDown = (e) => {
-    if (e.key == " ") {
+    if (e.key === " ") {
       e.preventDefault();
       toast.error("spaces are not allowed");
     }
@@ -53,7 +53,7 @@ function Register() {
     }
     if (!isMember) {
       dispatch(registerUser({ email, username, password })).then((value) => {
-        if (value.meta.requestStatus == "fulfilled") {
+        if (value.meta.requestStatus === "fulfilled") {
           setValues({ ...values, isMember: true });
         }
       });
@@ -167,7 +167,7 @@ function Register() {
         </div>
         <div className="right-container">
           <div className="art-image-container">
-            <img className="art-img" src={ArtImg} alt="art image" />
+            <img className="art-img" src={ArtImg} alt="art" />
           </div>
         </div>
       </Wrapper>
