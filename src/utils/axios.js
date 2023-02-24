@@ -1,7 +1,7 @@
 import axios from "axios";
 import { clearStore } from "../features/user/userSlice";
 const customFetch = axios.create({
-  baseURL: `${process.env.REACT_APP_URL}`,
+  baseURL: "http://localhost:8082",
 });
 
 export const checkForUnauthorizedResponse = (error, thunkAPI) => {
